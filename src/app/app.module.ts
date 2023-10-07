@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
 import { CaseComponent } from './case/case.component';
+import { TetrisComponent } from './tetris/tetris.component';
+import { SquareComponent } from './square/square.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GridComponent,
-    CaseComponent
+    CaseComponent,
+    TetrisComponent,
+    SquareComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,6 @@ export class GridComponent implements OnInit{
   cases: any[];
   isGameOver: boolean;
   isGameWon: boolean;
-  nbErrors: number;
 
   constructor() {
     this.ngOnInit();
@@ -21,7 +20,6 @@ export class GridComponent implements OnInit{
     this.setupGrid();
     this.isGameOver = false; 
     this.isGameWon = false;
-    this.nbErrors = 0;
   }
 
   // Creation of a 9x9 sudoku grid
