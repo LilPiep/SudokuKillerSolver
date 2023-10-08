@@ -8,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class GridComponent implements OnInit{
   
-  cases: any[];
-  isGameOver: boolean;
-  isGameWon: boolean;
+  cases!: any[];
+  isGameOver!: boolean;
+  isGameWon!: boolean;
 
   constructor() {
     this.ngOnInit();
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.cases = [];
     this.setupGrid();
     this.isGameOver = false; 
     this.isGameWon = false;
@@ -24,7 +25,6 @@ export class GridComponent implements OnInit{
 
   // Creation of a 9x9 sudoku grid
   setupGrid() {
-    this.cases = [];
     for (let i = 0; i < 9; i++) {
       this.cases[i] = [];
       for (let j = 0; j < 9; j++) {

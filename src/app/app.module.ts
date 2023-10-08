@@ -7,6 +7,7 @@ import { GridComponent } from './grid/grid.component';
 import { CaseComponent } from './case/case.component';
 import { TetrisComponent } from './tetris/tetris.component';
 import { SquareComponent } from './square/square.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SquareComponent } from './square/square.component';
     GridComponent,
     CaseComponent,
     TetrisComponent,
-    SquareComponent
+    SquareComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

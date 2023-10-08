@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./case.component.scss']
 })
 export class CaseComponent {
+  value!: number;
 
+  constructor() {
+    this.value = 0;
+  }
 }
